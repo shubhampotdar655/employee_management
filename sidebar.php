@@ -88,7 +88,7 @@
         <?php if($_SESSION['login_type'] == 1): ?>
           <li class="nav-item">
             <a href="./index.php?page=Dashboard" class="nav-link nav-edit_user">
-              <i class="nav-icon fas fa-users"></i>
+              <i class="fas fa-check-circle nav-icon"></i>
               <p>
                 Dashboard
               </p>
@@ -96,12 +96,20 @@
           </li>
         <?php endif; ?>
         <?php if($_SESSION['login_type'] != 4): ?>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="./index.php?page=My_Work" class="nav-link nav-edit_user">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 My Work
               </p>
+            </a>
+          </li> -->
+        <?php endif; ?>
+        <?php if($_SESSION['login_type'] != 4): ?>
+          <li class="nav-item">
+            <a href="./index.php?page=urgent" class="nav-link nav-edit_user">
+            <i class="nav-icon fas fa-clock"></i>
+            <button type="button" class="btn btn-danger">Urgent</button>
             </a>
           </li>
         <?php endif; ?>

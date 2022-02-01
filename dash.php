@@ -18,26 +18,3 @@
         </thead>       
     </table>
 </div>
-
-<div>
-
-<h2>JavaScript Confirm Box</h2>
-
-
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  var txt;
-  if (confirm(document.getElementById("shubh"))) {
-   alert("You pressed OK!");
-  } else {
-    alert("You pressed Cancel!");
-  }
-//   document.getElementById("demo").innerHTML = txt;
-}
-</script>
-
-</div>
